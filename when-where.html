@@ -145,7 +145,21 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div id="map" class="fh5co-map"></div>
+						<div id="map" class="fh5co-map">
+										<script>
+			              function initMap() {
+			                var uluru = {lat: -6.739962, lng: 108.2281439};
+			                var map = new google.maps.Map(document.getElementById('map'), {
+			                  zoom: 14,
+			                  center: uluru
+			                });
+			                var marker = new google.maps.Marker({
+			                  position: uluru,
+			                  map: map
+			                });
+			              }
+			            </script>
+						</div>
 					</div>
 				</div>
 			</div>
